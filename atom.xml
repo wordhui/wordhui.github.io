@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wordhui.github.io/</id>
     <title>Gridea</title>
-    <updated>2019-11-04T02:48:24.306Z</updated>
+    <updated>2019-11-04T14:17:39.116Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wordhui.github.io/"/>
     <link rel="self" href="https://wordhui.github.io//atom.xml"/>
@@ -10,6 +10,24 @@
     <logo>https://wordhui.github.io//images/avatar.png</logo>
     <icon>https://wordhui.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[chrome开发者工具使用技巧]]></title>
+        <id>https://wordhui.github.io//post/chrome-kai-fa-zhe-gong-ju-shi-yong-ji-qiao</id>
+        <link href="https://wordhui.github.io//post/chrome-kai-fa-zhe-gong-ju-shi-yong-ji-qiao">
+        </link>
+        <updated>2019-11-04T13:55:30.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="elements使用技巧">Elements使用技巧</h2>
+<ul>
+<li>1.在elements栏目中，可以直接选择某个元素对齐拖拽调整其在网页中的位置显示</li>
+<li>2.在控制台快速使用某个选择的元素
+<blockquote>
+<p>选中某个元素在控制台中输入$0 即为这个元素，$1为上次选择的元素<br>
+<img src="https://wordhui.github.io//post-images/1572877013110.jpg" alt="如图"></p>
+</blockquote>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://wordhui.github.io//post/hello-gridea</id>
