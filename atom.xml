@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://wordhui.github.io/</id>
     <title>Gridea</title>
-    <updated>2019-11-04T15:07:17.795Z</updated>
+    <updated>2019-11-05T15:11:56.503Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://wordhui.github.io/"/>
+    <link rel="self" href="https://wordhui.github.io//atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>https://wordhui.github.io//images/avatar.png</logo>
+    <icon>https://wordhui.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[chrome开发者工具使用技巧]]></title>
-        <id>http://localhost:4000/post/chrome-kai-fa-zhe-gong-ju-shi-yong-ji-qiao</id>
-        <link href="http://localhost:4000/post/chrome-kai-fa-zhe-gong-ju-shi-yong-ji-qiao">
+        <id>https://wordhui.github.io//post/chrome-kai-fa-zhe-gong-ju-shi-yong-ji-qiao</id>
+        <link href="https://wordhui.github.io//post/chrome-kai-fa-zhe-gong-ju-shi-yong-ji-qiao">
         </link>
         <updated>2019-11-04T13:55:30.000Z</updated>
         <content type="html"><![CDATA[<h2 id="chrome-开发者工具全局快捷键">chrome 开发者工具全局快捷键</h2>
@@ -27,12 +27,12 @@
 <li>2.在控制台快速使用某个选择的元素
 <blockquote>
 <p>选中某个元素在控制台中输入$0 即为这个元素，$1为上次选择的元素<br>
-<img src="http://localhost:4000/post-images/1572877013110.jpg" alt="如图"></p>
+<img src="https://wordhui.github.io//post-images/1572877013110.jpg" alt="如图"></p>
 </blockquote>
 </li>
 <li>3.调试元素hover的样式 (点击:hover按钮)
 <blockquote>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1572878378523.jpg" alt=""></figure>
+<figure data-type="image" tabindex="1"><img src="https://wordhui.github.io//post-images/1572878378523.jpg" alt=""></figure>
 </blockquote>
 </li>
 <li>4.快速显示删除某个css class的显示和隐藏
@@ -42,12 +42,43 @@
 </li>
 <li>5.给某个DOM元素添加断点
 <blockquote>
-<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/1572879311958.jpg" alt="给某个DOM元添加断点"></figure>
+<figure data-type="image" tabindex="2"><img src="https://wordhui.github.io//post-images/1572879311958.jpg" alt="给某个DOM元添加断点"></figure>
 </blockquote>
 </li>
-<li>6.其他常用功能
+<li>6.选中某个元素后可以点击scroll into view 直接滚动到该元素</li>
+<li>7.其他常用功能
 <blockquote>
-<figure data-type="image" tabindex="3"><img src="http://localhost:4000/post-images/1572879957572.jpg" alt=""></figure>
+<figure data-type="image" tabindex="3"><img src="https://wordhui.github.io//post-images/1572879957572.jpg" alt=""></figure>
+</blockquote>
+</li>
+</ul>
+<h2 id="network常见使用技巧">Network常见使用技巧</h2>
+<ul>
+<li>1.保留日志功能，Network面板中的Preserve log 按钮打开后刷新或者页面跳转也不会清除之前的日志方便调试登录等类似请求</li>
+<li>2.禁用缓存功能，NetWork面板中的Disable cache按钮打开后刷新页面将不会从缓存中取数据，类似于Ctrl+F5强制刷新</li>
+<li>3.选择需要查看的请求类型，默认是所有类型，我们可以按住Ctrl键选择需要查看的请求类型，如XHR和DOC就可以按住Ctrl键然后点击XHR和DOC即可同时查看这两种请求类型</li>
+<li>4.请求过滤 在filter框中输入 - 字符会提示所有可以过滤的方式 例：
+<blockquote>
+<p>-status-code:200  即为显示response status不是200的请求<br>
+status-code:200 即为显示response status是200的请求<br>
+method:POST 即为显示请求方法为POST类型的请求</p>
+</blockquote>
+</li>
+<li>5.在查找请求的时要善用过滤，大小，类型排序，已经类型筛选来快速找到需要的请求</li>
+</ul>
+<h2 id="source面板使用snippets调试javascript代码">Source面板使用Snippets调试JavaScript代码</h2>
+<ul>
+<li>1.在Sources面板下找到Snippets子面板，新建自己需要调试的snippets，写下代码后按住Ctrl+回车运行该代码片段</li>
+<li>2.监控某个变量的值变化，在snippets面板最右侧的中找到watch，在里面添加变量名，然后调试代码即可以查看变量的值变化过程</li>
+<li>3.查看当前代码的调用堆栈，在snippets面板最右侧的中找到Call Stack，这里可以查看调用堆栈</li>
+<li>4.临时取消某个断点：
+<blockquote>
+<p>在snippets面板最右侧的中找到BreakPoints 这里可以临时取消某个断点</p>
+</blockquote>
+</li>
+<li>5.调试XHR发送请求的代码
+<blockquote>
+<p>在snippets面板最右侧的中找到XHR Breakpoints可以添加某个XHR的特征，然后调试该XHR请求</p>
 </blockquote>
 </li>
 </ul>
@@ -55,8 +86,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>http://localhost:4000/post/hello-gridea</id>
-        <link href="http://localhost:4000/post/hello-gridea">
+        <id>https://wordhui.github.io//post/hello-gridea</id>
+        <link href="https://wordhui.github.io//post/hello-gridea">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>

@@ -4,10 +4,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>chrome开发者工具使用技巧 | Gridea</title>
 <meta name="description" content="温故而知新" />
-<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1572880028006">
+<link rel="shortcut icon" href="https://wordhui.github.io//favicon.ico?v=1572966711610">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+<link rel="stylesheet" href="https://wordhui.github.io//styles/main.css">
 
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
@@ -19,8 +19,8 @@
     <div class="main">
       <div class="main-content">
         <div class="site-header">
-  <a href="http://localhost:4000">
-  <img class="avatar" src="http://localhost:4000/images/avatar.png?v=1572880028006" alt="">
+  <a href="https://wordhui.github.io/">
+  <img class="avatar" src="https://wordhui.github.io//images/avatar.png?v=1572966711610" alt="">
   </a>
   <h1 class="site-title">
     Gridea
@@ -80,7 +80,7 @@
                 2019-11-04
               </span>
               <span>
-                1 min read
+                3 min read
               </span>
               
             </div>
@@ -98,12 +98,12 @@
 <li>2.在控制台快速使用某个选择的元素
 <blockquote>
 <p>选中某个元素在控制台中输入$0 即为这个元素，$1为上次选择的元素<br>
-<img src="http://localhost:4000/post-images/1572877013110.jpg" alt="如图"></p>
+<img src="https://wordhui.github.io//post-images/1572877013110.jpg" alt="如图"></p>
 </blockquote>
 </li>
 <li>3.调试元素hover的样式 (点击:hover按钮)
 <blockquote>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1572878378523.jpg" alt=""></figure>
+<figure data-type="image" tabindex="1"><img src="https://wordhui.github.io//post-images/1572878378523.jpg" alt=""></figure>
 </blockquote>
 </li>
 <li>4.快速显示删除某个css class的显示和隐藏
@@ -113,12 +113,43 @@
 </li>
 <li>5.给某个DOM元素添加断点
 <blockquote>
-<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/1572879311958.jpg" alt="给某个DOM元添加断点"></figure>
+<figure data-type="image" tabindex="2"><img src="https://wordhui.github.io//post-images/1572879311958.jpg" alt="给某个DOM元添加断点"></figure>
 </blockquote>
 </li>
-<li>6.其他常用功能
+<li>6.选中某个元素后可以点击scroll into view 直接滚动到该元素</li>
+<li>7.其他常用功能
 <blockquote>
-<figure data-type="image" tabindex="3"><img src="http://localhost:4000/post-images/1572879957572.jpg" alt=""></figure>
+<figure data-type="image" tabindex="3"><img src="https://wordhui.github.io//post-images/1572879957572.jpg" alt=""></figure>
+</blockquote>
+</li>
+</ul>
+<h2 id="network常见使用技巧">Network常见使用技巧</h2>
+<ul>
+<li>1.保留日志功能，Network面板中的Preserve log 按钮打开后刷新或者页面跳转也不会清除之前的日志方便调试登录等类似请求</li>
+<li>2.禁用缓存功能，NetWork面板中的Disable cache按钮打开后刷新页面将不会从缓存中取数据，类似于Ctrl+F5强制刷新</li>
+<li>3.选择需要查看的请求类型，默认是所有类型，我们可以按住Ctrl键选择需要查看的请求类型，如XHR和DOC就可以按住Ctrl键然后点击XHR和DOC即可同时查看这两种请求类型</li>
+<li>4.请求过滤 在filter框中输入 - 字符会提示所有可以过滤的方式 例：
+<blockquote>
+<p>-status-code:200  即为显示response status不是200的请求<br>
+status-code:200 即为显示response status是200的请求<br>
+method:POST 即为显示请求方法为POST类型的请求</p>
+</blockquote>
+</li>
+<li>5.在查找请求的时要善用过滤，大小，类型排序，已经类型筛选来快速找到需要的请求</li>
+</ul>
+<h2 id="source面板使用snippets调试javascript代码">Source面板使用Snippets调试JavaScript代码</h2>
+<ul>
+<li>1.在Sources面板下找到Snippets子面板，新建自己需要调试的snippets，写下代码后按住Ctrl+回车运行该代码片段</li>
+<li>2.监控某个变量的值变化，在snippets面板最右侧的中找到watch，在里面添加变量名，然后调试代码即可以查看变量的值变化过程</li>
+<li>3.查看当前代码的调用堆栈，在snippets面板最右侧的中找到Call Stack，这里可以查看调用堆栈</li>
+<li>4.临时取消某个断点：
+<blockquote>
+<p>在snippets面板最右侧的中找到BreakPoints 这里可以临时取消某个断点</p>
+</blockquote>
+</li>
+<li>5.调试XHR发送请求的代码
+<blockquote>
+<p>在snippets面板最右侧的中找到XHR Breakpoints可以添加某个XHR的特征，然后调试该XHR请求</p>
 </blockquote>
 </li>
 </ul>
@@ -130,6 +161,8 @@
 <ul>
 <li><a href="#chrome-%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E5%85%A8%E5%B1%80%E5%BF%AB%E6%8D%B7%E9%94%AE">chrome 开发者工具全局快捷键</a></li>
 <li><a href="#elements%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7">Elements使用技巧</a></li>
+<li><a href="#network%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7">Network常见使用技巧</a></li>
+<li><a href="#source%E9%9D%A2%E6%9D%BF%E4%BD%BF%E7%94%A8snippets%E8%B0%83%E8%AF%95javascript%E4%BB%A3%E7%A0%81">Source面板使用Snippets调试JavaScript代码</a></li>
 </ul>
 </li>
 </ul>
@@ -142,7 +175,7 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="http://localhost:4000/post/hello-gridea">
+            <a href="https://wordhui.github.io//post/hello-gridea">
               <h3 class="post-title">
                 Hello Gridea
               </h3>
@@ -180,7 +213,7 @@
 
         <div class="site-footer">
   Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="http://localhost:4000/atom.xml" target="_blank">RSS</a>
+  <a class="rss" href="https://wordhui.github.io//atom.xml" target="_blank">RSS</a>
 </div>
 
 <script>
